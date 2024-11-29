@@ -279,12 +279,16 @@ font-size: 22px;
     padding: 180px 52px 88px;
 }
 
-.header__address {
+.footer__address {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24.3px;
     text-underline-position: under;
+}
+
+.footer__menu {
+    padding-left: 40px;
 }
 
 .footer__menu-list {
@@ -295,7 +299,6 @@ font-size: 22px;
     font-weight: 400;
     text-underline-position: under;
     align-items: center;
-    padding-right: 5px;
 }
 
 .footer__menu-list-item {
