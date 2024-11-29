@@ -22,7 +22,6 @@
 
 .header__links-list-item_no-bullet {
     list-style-type: none;
-    
 }
 
 .header__link_active {
@@ -144,6 +143,7 @@ font-size: 22px;
     justify-content: space-evenly;
     list-style: none;
 }
+
 .lots__card-list-item {
     display: flex;
     padding-left: px;
@@ -187,7 +187,6 @@ font-size: 22px;
     flex-direction: column;
     justify-content: space-between;
     background-image: url('../images/card-lot-01.jpg');
-    
 }
 
 .card_type_book {
