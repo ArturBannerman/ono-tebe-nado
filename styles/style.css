@@ -1,323 +1,318 @@
 .header {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: 1fr 148px 1fr;
-    padding: 92px 40px;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 148px 1fr;
+  padding: 92px 40px;
 }
 
 .header__links-list {
-    display: flex;
-    gap: 20px;
-    list-style-type: circle;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 10px;
-    text-underline-position: under;
+  display: flex;
+  gap: 20px;
+  list-style-type: circle;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+  text-underline-position: under;
 }
 
 .header__links-list-item {
-    padding-right: 14px;
+  padding-right: 14px;
 }
 
 .header__links-list-item_no-bullet {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .header__link_active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header__logo {
-    display: block;
+  display: block;
 }
 
 .header__logo-image {
-    height: 105px;
+  height: 105px;
+}
+
+.adress {
+  justify-self: end;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  text-underline-position: under;
+  padding-right: 45px;
 }
 
 .header__address {
-    justify-self: end;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24.3px;
-    text-underline-position: under;
-    padding-right: 45px;
+  justify-self: end;
 }
 
 .cover {
-    background-image: url('../images/cover.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 757px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    text-transform: uppercase;
-    color: white;
-    z-index: -2;
-    padding: 165px 0px 51px;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 757px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  padding: 165px 0px 51px;
 }
 
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    background-color: rgb(0, 0, 0, 0.6);
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 2;
 }
 
 .cover__title {
-    display: flex;
-    flex-direction: column;
-    font-size: 100px;
-    padding: 0px 50px;
-    letter-spacing: 0.3em;
+  display: flex;
+  flex-direction: column;
+  font-size: 100px;
+  padding: 0px 50px;
+  letter-spacing: 0.3em;
+  z-index: 3;
 }
 
 .aligned-text_left {
-    text-align: left;
+  text-align: left;
 }
 
 .aligned-text_center {
-    text-align: center;
-    line-height: 136px;
+  text-align: center;
+  line-height: 136px;
 }
 
 .aligned-text_right {
-    text-align: right;
-    line-height: 102px;
+  text-align: right;
+  line-height: 102px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 0.6em;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
-    letter-spacing: initial;
+  letter-spacing: initial;
 }
 
 .cover__description {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 50px;
-    padding-left: 78px;
-    
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 78px;
+  z-index: 3;
 }
 
 .cover__description-text {
-display: block;
-word-spacing: 18.5px;
-font-size: 22px;
+  display: block;
+  word-spacing: 18.5px;
+  font-size: 22px;
 }
 
 .bet-button {
-    background-color: transparent;
-    color: white;
-    border: 1px solid;
-    font-family: Raleway;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 25.83px;
-    padding: 12px 32px 11px 31px;
-    text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: 1px solid;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.83px;
+  padding: 12px 32px 11px 31px;
+  text-transform: uppercase;
 }
 
 .lots__heading {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
-    text-transform: uppercase;
-    padding: 178px 915px 25px 64px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  padding: 178px 64px 25px 64px;
 }
 
 .lots__card-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  row-gap: 25px;
 }
 
 .lots__card-list-item {
-    display: flex;
-    padding-left: px;
-    width: 336px;
-    height: 563px;
+  display: flex;
+  padding-left: px;
+  width: 336px;
+  min-height: 563px;
 }
 
 .card-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .card {
-    width: 334px;
-    height: 563px;
-    color: white;
-    padding: 51px 40px 48px;
-    position: relative;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  min-height: 563px;
+  color: white;
+  padding: 51px 40px 48px;
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .card__title {
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-position: under;
-    text-decoration-thickness:  1px;
-    font-size: 22px;
-    font-weight: 26.4px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 1px;
+  font-size: 22px;
+  font-weight: 26.4px;
+  z-index: 3;
 }
 
 .card__text {
-    font-size: 20px;
-    line-height: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  z-index: 3;
 }
 
 .card_type_film {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: url('../images/card-lot-01.jpg');
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../images/card-lot-02.jpg');
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: url('../images/card-lot-03.jpg');
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 .lots__look-more-link {
-    display: block;
-    font-size: 20px;
-    line-height: 23.48px;
-    padding-top: 32px;
-    padding-left: 64px;
-    text-underline-position: under;
+  display: block;
+  font-size: 20px;
+  line-height: 23.48px;
+  padding-top: 32px;
+  padding-left: 64px;
+  text-underline-position: under;
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 383px 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 146px;
-    padding-right: 24px;
+  display: grid;
+  grid-template-columns: 383px 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 146px;
+  padding-right: 24px;
 }
 
 .about__column {
-    display: flex;
-    justify-content: center;
-    padding-top: 37px;
-    grid-row: span 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+  grid-row: span 2;
 }
 
 .about__logo {
-    display: flex;
-    background-color: black;
-    width: 240px;
-    height: 240px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+  display: flex;
+  background-color: black;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .about__logo-image {
-    width: 148px;
-    height: 114px;
+  width: 148px;
+  height: 114px;
 }
 
 .about__title {
-    display: flex;
-    align-items: center;
-    font-size: 40px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 137px;
-    padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 137px;
+  padding-bottom: 100px;
 }
 
 .about__text {
-    display: flex;
-    flex-wrap: wrap;
-    grid-row: span 2;
+  display: flex;
+  flex-wrap: wrap;
+  grid-row: span 2;
 }
 
 .paragraph-text {
-    display: block;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-.paragraph-text-one {
-    letter-spacing: 0.004em;
-    padding-bottom: 25px;
+.paragraph-text-auction {
+  letter-spacing: 0.004em;
+  padding-bottom: 25px;
 }
 
-.paragraph-text-two {
-    letter-spacing: 0.002em;
+.paragraph-text-lots {
+  letter-spacing: 0.002em;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 180px 52px 88px;
-}
-
-.footer__address {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24.3px;
-    text-underline-position: under;
+  display: flex;
+  justify-content: space-between;
+  padding: 180px 52px 88px;
 }
 
 .footer__menu {
-    padding-left: 40px;
+  padding-right: 5px;
 }
 
 .footer__menu-list {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    font-size: 18px;
-    font-weight: 400;
-    text-underline-position: under;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 400;
+  text-underline-position: under;
+  align-items: center;
 }
 
 .footer__menu-list-item {
-    font-size: 18px;
-    width: 400;
-    line-height: 21.13px;
+  font-size: 18px;
+  width: 400;
+  line-height: 21.13px;
 }
 
 .footer__menu-link_active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer__social-list {
-    display: flex;
-    gap: 48px;
+  display: flex;
+  gap: 48px;
 }
 
 .footer__social-list-item {
-    list-style-type: none;
-    width: 48px;
-    height: 48px;
+  list-style-type: none;
+  width: 48px;
+  height: 48px;
 }
